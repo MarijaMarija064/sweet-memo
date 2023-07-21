@@ -141,17 +141,18 @@ nav {
 
   .myPeople {
     font-size: 22px;
-    width: 190px;
+    width: 100px;
   }
 
+
   .logo img {
-    width: 100px;
-    height: 119px;
+    width: 90px;
+    height: 90px;
   }
 
 
   .namesOn {
-    width: 119px;
+    width: 100px;
   }
 
   .name {
@@ -165,7 +166,7 @@ nav {
   }
 
   main {
-    padding-left: 150px;
+    padding-left: 120px;
     padding-right: 0px;
     padding-top: 10px;
   }
