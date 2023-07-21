@@ -1,0 +1,170 @@
+
+:root {
+  --basicNav:rgba(97, 39, 118, 0.5);
+  --white: #faf0e6;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body {
+  background-image: url(./assets/pexels-miguel-á-padriñán-255377.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 30px;
+  position: static;
+  /* background-image: linear-gradient(180deg, rgb(146, 84, 204), white); */
+  /* border: 1px solid red; */
+  background-color:var(--basicNav);
+  height: 120px;
+}
+
+h1 {
+  padding: 30px;
+}
+
+.myPeople {
+  padding: 30px;
+  width: 250px;
+  text-align: center;
+  background-color: var(--basicPeach);
+}
+
+.myPeople:hover {
+  background-color:rgba(97, 39, 118, 0.5);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.logo {
+  padding: 30px;
+}
+
+.logo img {
+  border: 2px solid rgb(146, 84, 204);
+}
+
+.namesOf {
+  opacity: 0;
+  position: absolute;
+}
+
+.namesOn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  /* border: 1px solid red; */
+  opacity: 1;
+  height: 100vh;
+  transition-duration: 2s;
+  background-image: linear-gradient(180deg,rgba(97, 39, 118, 0.5), white);
+  position: absolute;
+}
+.name {
+  font-size: 22px;
+  padding: 20px;
+  /* border: 1px solid red; */
+}
+
+.name:hover {
+  text-decoration: none;
+  background-color:  rgba(97, 39, 118, 0.5);
+  transition: 0.5s;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-left: 350px;
+  padding-right: 200px;
+  padding-top: 60px;
+  /* border: 1px solid red; */
+}
+
+.image {
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 50px;
+  border-radius: 15px;
+}
+
+.image1 {
+  background-image: url(./assets/IMG-20191026-WA0009.jpg);
+}
+.image2 {
+  background-image: url(./assets/IMG-0ccefe5533a10d1a50ee5deb11c34083-V.jpg);
+}
+.image3 {
+  background-image: url(./assets/IMG-9dc45a26c1c453ceea941efdfb6c6b1a-V.jpg);
+}
+.image4 {
+  background-image: url(./assets/IMG_20210507_124847.jpg);
+}
+.image5 {
+  background-image: url(./assets/IMG-8a8df5f51f173b0ba39c3d4421ed96c1-V.jpg);
+}
+.image6 {
+  background-image: url(./assets/IMG-8f187d87b2fe65c15b087873621450a1-V.jpg);
+}
+
+
+
+
+@media screen and (max-width: 425px){
+  
+nav {
+  height: 100px;
+}
+
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .myPeople {
+    font-size: 22px;
+  }
+
+  .logo img {
+    width: 100px;
+    height: 100px;
+  }
+
+
+  .namesOn {
+    width: 119px;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+
+
+  .image {
+    width: 150px;
+    height: 150px;
+  }
+
+  main {
+    padding-left: 150px;
+    padding-right: 0px;
+    padding-top: 10px;
+  }
+}
